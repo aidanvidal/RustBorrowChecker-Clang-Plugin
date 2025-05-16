@@ -59,5 +59,7 @@ The project defines a custom exception handling mechanism for borrow checker vio
 
 For advanced usage, you can extend the `BorrowCheckerVisitor` to add more features to the analysis provided by the plugin. 
 
+This is my first time making a Clang plugin so there was a lot to learn, but the (documentaion)[https://clang.llvm.org/doxygen/namespaceclang.html] was really helpful in that.
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
