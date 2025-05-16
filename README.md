@@ -1,9 +1,9 @@
 # C++ Ownership Model and Borrow Checker Plugin
 
 ## Description
-This project implements a simple ownership model in C++, inspired by Rust's borrow checker. It provides classes for ownership and borrowing of resources, ensuring safe memory management by enforcing strict ownership semantics. The project also includes a Clang plugin that performs static analysis to catch violation of these ownership and borrowing rules at compile time. 
+This project implements a simple ownership model in C++, inspired by (Rust's borrow checker)[https://doc.rust-lang.org/1.8.0/book/references-and-borrowing.html]. It provides classes for ownership and borrowing of resources, ensuring safe memory management by enforcing strict ownership semantics. The project also includes a Clang plugin that performs static analysis to catch violation of these ownership and borrowing rules at compile time. 
 
-The ownership.h implements the custom classes using a RAII technique. The BorrowCheckPlugin.cpp implements the Clang plugin which will check for borrow checking
+The ownership.h implements the custom classes using a (RAII)[https://en.cppreference.com/w/cpp/language/raii] technique. The BorrowCheckPlugin.cpp implements the Clang plugin which will check for borrow checking
 ensuring that there are no overlapping mutable borrows and no mutable borrows during immutable borrows.
 
 ## Installation and Setup
